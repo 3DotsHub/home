@@ -26,21 +26,28 @@ export default function PageHome() {
 
 			<div className="font-semibold">Join us in transforming the future of technologies and innovation!</div>
 
-			<div className="grid md:grid-cols-2 gap-10 justify-center items-center my-20">
-				<Image
-					className="mx-auto shadow-2xl cursor-pointer rounded-2xl"
-					alt="logo"
-					src={'/assets/3dotshub.jpeg'}
-					width={300}
-					height={300}
-				></Image>
-				<Image
-					className="mx-auto shadow-2xl cursor-pointer rounded-2xl"
-					alt="logo"
-					src={'/assets/3dotshub.jpeg'}
-					width={300}
-					height={300}
-				></Image>
+			<div className="grid md:grid-cols-2 gap-10 justify-center items-center my-10">
+				<div className="font-semibold text-center">
+					<Image
+						className="mx-auto shadow-2xl cursor-pointer rounded-2xl"
+						alt="logo"
+						src={'/assets/3dotshub.jpeg'}
+						width={300}
+						height={300}
+					/>
+					<div className="mt-2">3Dots Inc.</div>
+				</div>
+
+				<div className="font-semibold text-center">
+					<Image
+						className="mx-auto shadow-2xl cursor-pointer rounded-2xl"
+						alt="logo"
+						src={'/assets/3dotshub.jpeg'}
+						width={300}
+						height={300}
+					/>
+					<div className="mt-2">3Dots Capital OUe</div>
+				</div>
 			</div>
 		</AppCard>
 	);
