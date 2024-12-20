@@ -40,33 +40,33 @@ export const API_CLIENT = axios.create({
 });
 
 // WAGMI CONFIG
-// export const WAGMI_CHAIN = CONFIG.chain;
-// export const WAGMI_METADATA = {
-// 	name: 'Wryt Labs',
-// 	description: 'Web3 Application to interact with Wryt Labs Tools',
-// 	url: CONFIG.landing,
-// 	icons: [],
-// };
-// export const WAGMI_CONFIG = createConfig({
-// 	chains: [WAGMI_CHAIN],
-// 	transports: {
-// 		[CONFIG.chain.id]: http(CONFIG.rpc),
-// 	},
-// 	batch: {
-// 		multicall: {
-// 			wait: 200,
-// 		},
-// 	},
-// 	connectors: [
-// 		walletConnect({ projectId: CONFIG.wagmiId, metadata: WAGMI_METADATA, showQrModal: false }),
-// 		injected({ shimDisconnect: true }),
-// 		coinbaseWallet({
-// 			appName: WAGMI_METADATA.name,
-// 			appLogoUrl: WAGMI_METADATA.icons[0],
-// 		}),
-// 	],
-// 	ssr: true,
-// 	storage: createStorage({
-// 		storage: cookieStorage,
-// 	}),
-// });
+export const WAGMI_CHAIN = CONFIG.chain;
+export const WAGMI_METADATA = {
+	name: '3Dotshub',
+	description: 'Web3 Application to interact with 3Dotshub Tools',
+	url: CONFIG.landing,
+	icons: [],
+};
+export const WAGMI_CONFIG = createConfig({
+	chains: [WAGMI_CHAIN],
+	transports: {
+		[CONFIG.chain.id]: http(CONFIG.rpc),
+	},
+	batch: {
+		multicall: {
+			wait: 200,
+		},
+	},
+	connectors: [
+		walletConnect({ projectId: CONFIG.wagmiId, metadata: WAGMI_METADATA, showQrModal: false }),
+		injected({ shimDisconnect: true }),
+		coinbaseWallet({
+			appName: WAGMI_METADATA.name,
+			appLogoUrl: WAGMI_METADATA.icons[0],
+		}),
+	],
+	ssr: true,
+	storage: createStorage({
+		storage: cookieStorage,
+	}),
+});
