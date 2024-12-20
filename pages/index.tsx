@@ -26,8 +26,21 @@ export default function PageHome() {
 
 			<div className="font-semibold">Join us in transforming the future of technologies and innovation!</div>
 
-			<div className="flex justify-center my-20">
-				<Image className="rounded-2xl" alt="logo" src={'/assets/3dotshub.jpeg'} width={300} height={300}></Image>
+			<div className="grid md:grid-cols-2 justify-center items-center my-20">
+				<Image
+					className="mx-auto shadow-2xl cursor-pointer rounded-2xl"
+					alt="logo"
+					src={'/assets/3dotshub.jpeg'}
+					width={300}
+					height={300}
+				></Image>
+				<Image
+					className="mx-auto shadow-2xl cursor-pointer rounded-2xl"
+					alt="logo"
+					src={'/assets/3dotshub.jpeg'}
+					width={300}
+					height={300}
+				></Image>
 			</div>
 		</AppCard>
 	);
