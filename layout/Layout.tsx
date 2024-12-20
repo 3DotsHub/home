@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 				<title>WrytLabs - Home</title>
 			</Head>
 
-			<MenuBar />
+			{/* <MenuBar /> */}
 
 			<div className="h-main pt-32 max-md:pt-28">
 				<main className="block min-h-content p-4 xl:px-20">{children}</main>
