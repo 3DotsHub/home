@@ -26,7 +26,7 @@ export default function PageHome() {
 
 			<div className="font-semibold">Join us in transforming the future of technologies and innovation!</div>
 
-			<div className="grid md:grid-cols-2 justify-center items-center my-20">
+			<div className="grid md:grid-cols-2 gap-10 justify-center items-center my-20">
 				<Image
 					className="mx-auto shadow-2xl cursor-pointer rounded-2xl"
 					alt="logo"
