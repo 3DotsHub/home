@@ -12,14 +12,14 @@ import BlockUpdater from '@components/BlockUpdater';
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<ReduxProvider store={store}>
-			{/* <Web3ModalProvider> */}
-			{/* <BlockUpdater> */}
-			<ToastContainer position="bottom-right" hideProgressBar={false} rtl={false} theme="light" />
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
-			{/* </BlockUpdater> */}
-			{/* </Web3ModalProvider> */}
+			<Web3ModalProvider>
+				<BlockUpdater>
+					<ToastContainer position="bottom-right" hideProgressBar={false} rtl={false} theme="light" />
+					<Layout>
+						<Component {...pageProps} />
+					</Layout>
+				</BlockUpdater>
+			</Web3ModalProvider>
 		</ReduxProvider>
 	);
 }

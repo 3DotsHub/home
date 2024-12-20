@@ -63,6 +63,12 @@ const config: Config = {
 						hover: '#d1d5db',
 					},
 				},
+				button: {
+					default: '#092F62',
+					hover: '#0A80A0',
+					disabled: '#EAEBF0',
+					textdisabled: '#ADB2C2',
+				},
 			},
 		},
 	},

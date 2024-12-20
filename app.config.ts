@@ -13,10 +13,10 @@ if (process.env.NEXT_PUBLIC_RPC_URL_POLYGON === undefined) throw new Error('NEXT
 // Config
 export type ConfigEnv = { landing: string; app: string; api: string; indexer: string; rpc: string; wagmiId: string; chain: Chain };
 export const CONFIG: ConfigEnv = {
-	landing: process.env.NEXT_PUBLIC_LANDINGPAGE_URL || 'https://wrytlabs.io',
-	app: process.env.NEXT_PUBLIC_APP_URL || 'https://app.wrytlabs.io',
-	api: process.env.NEXT_PUBLIC_API_URL || 'https://api.wrytlabs.io',
-	indexer: process.env.NEXT_PUBLIC_INDEXER_URL || 'https://indexer.wrytlabs.io',
+	landing: process.env.NEXT_PUBLIC_LANDINGPAGE_URL || 'https://3dotshub.com',
+	app: process.env.NEXT_PUBLIC_APP_URL || 'https://app.3dotshub.com',
+	api: process.env.NEXT_PUBLIC_API_URL || 'https://api.3dotshub.com',
+	indexer: process.env.NEXT_PUBLIC_INDEXER_URL || 'https://indexer.3dotshub.com',
 	chain: process.env.NEXT_PUBLIC_CHAIN_NAME === 'mainnet' ? mainnet : polygon,
 	wagmiId: process.env.NEXT_PUBLIC_WAGMI_ID,
 	rpc:

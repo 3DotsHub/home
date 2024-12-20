@@ -29,7 +29,7 @@ export default function MenuBar() {
 				</div>
 			</div>
 
-			{isNavBarOpen ? <NavBar isNavBarOpen={isNavBarOpen} setIsNavBarOpen={setIsNavBarOpen} /> : null}
+			{/* {isNavBarOpen ? <NavBar isNavBarOpen={isNavBarOpen} setIsNavBarOpen={setIsNavBarOpen} /> : null} */}
 		</>
 	);
 }

@@ -28,10 +28,10 @@ export default function Footer() {
 					<FooterItem link={SOCIAL.Github_user} text="Github" icon={faGithub} />
 				</li>
 				<li>
-					<FooterItem link={SOCIAL.Mail} text="Contact Us" icon={faEnvelope} />
+					<FooterItem link={SOCIAL.Telegram} text="Telegram" icon={faTelegram} />
 				</li>
 				<li>
-					<FooterItem link={SOCIAL.Telegram} text="Telegram" icon={faTelegram} />
+					<FooterItem link={SOCIAL.Mail} text="Contact Us" icon={faEnvelope} />
 				</li>
 			</ul>
 		</>
