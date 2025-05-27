@@ -34,20 +34,21 @@ export default function BockUpdater({ children }: { children?: React.ReactElemen
 		initStart = Date.now();
 
 		console.log(`Init [BlockUpdater]: Start loading application data... ${initStart}`);
-		store.dispatch(fetchMorphoFactory());
-		store.dispatch(fetchMorphoLoan());
-		store.dispatch(fetchMorphoCollateral());
-		store.dispatch(fetchMorphoExecute());
+		// store.dispatch(fetchMorphoFactory());
+		// store.dispatch(fetchMorphoLoan());
+		// store.dispatch(fetchMorphoCollateral());
+		// store.dispatch(fetchMorphoExecute());
 	}, [initialized]);
 
 	// --------------------------------------------------------------------------------
 	// Init done
 	useEffect(() => {
-		if (loadedMorphoScale && !initialized) {
+		if (true && !initialized) {
+			// @dev: add here
 			console.log(`Init [BlockUpdater]: Done. ${Date.now() - initStart} ms`);
 			setInitialized(true);
 		}
-	}, [initialized, loadedMorphoScale]);
+	}, [initialized]);
 
 	// --------------------------------------------------------------------------------
 	// Block update policies

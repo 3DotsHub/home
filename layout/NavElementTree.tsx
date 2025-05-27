@@ -63,15 +63,15 @@ export const NavTree: NavBarTree[] = [
 				to: '/home/purpose',
 				icon: <FontAwesomeIcon icon={faFingerprint} className="cursor-pointer" />,
 			},
-			// {
-			// 	name: 'Vault',
-			// 	to: '/finance/vault',
-			// 	icon: <FontAwesomeIcon icon={faVault} className="cursor-pointer" />,
-			// },
 			{
-				name: 'Docs',
-				to: '/docs',
+				name: 'Investor',
+				to: '/investor',
 				icon: <FontAwesomeIcon icon={faBook} className="cursor-pointer" />,
+			},
+			{
+				name: 'R&D',
+				to: '/product',
+				icon: <FontAwesomeIcon icon={faVault} className="cursor-pointer" />,
 			},
 		],
 	},
@@ -79,148 +79,46 @@ export const NavTree: NavBarTree[] = [
 		title: 'Management',
 		items: [
 			{
-				name: 'Governance',
+				name: 'Member',
 				icon: <FontAwesomeIcon icon={faPeopleGroup} className="cursor-pointer" />,
 				childs: [
 					{
 						name: 'List',
-						to: '/governance/list',
+						to: '/member/list',
 					},
 					{
 						name: 'Details',
-						to: '/governance/details',
+						to: '/member/details',
 					},
 					{
 						name: 'Create',
-						to: '/governance/create',
+						to: '/member/create',
 					},
 					{
 						name: 'Edit',
-						to: '/governance/edit',
+						to: '/member/edit',
 					},
 				],
 			},
 			{
-				name: 'Environment',
+				name: 'Payment',
 				icon: <FontAwesomeIcon icon={faServer} className="cursor-pointer" />,
 				childs: [
 					{
 						name: 'List',
-						to: '/environment/list',
+						to: '/payment/list',
 					},
 					{
 						name: 'Details',
-						to: '/environment/details',
+						to: '/payment/details',
 					},
 					{
 						name: 'Create',
-						to: '/environment/create',
+						to: '/payment/create',
 					},
 					{
 						name: 'Edit',
-						to: '/environment/edit',
-					},
-				],
-			},
-			{
-				name: 'Morpho: Scale',
-				icon: <FontAwesomeIcon icon={faArrowsUpToLine} className="cursor-pointer" />,
-				childs: [
-					{
-						name: 'List',
-						to: '/morpho/scale/list',
-					},
-					{
-						name: 'Create',
-						to: '/morpho/scale/create',
-					},
-				],
-			},
-			{
-				name: 'Storage',
-				icon: <FontAwesomeIcon icon={faFileZipper} className="cursor-pointer" />,
-				childs: [
-					// {
-					// 	name: 'List',
-					// 	to: '/storage/list',
-					// },
-					// {
-					// 	name: 'Details',
-					// 	to: '/storage/details',
-					// },
-					{
-						name: 'Upload',
-						to: '/storage',
-					},
-					// {
-					// 	name: 'Edit',
-					// 	to: '/storage/edit',
-					// },
-				],
-			},
-			{
-				name: 'Vault',
-				icon: <FontAwesomeIcon icon={faVault} className="cursor-pointer" />,
-				childs: [
-					{
-						name: 'List',
-						to: '/finance/vault',
-					},
-					// {
-					// 	name: 'Details',
-					// 	to: '/vault/details',
-					// },
-					// {
-					// 	name: 'Create',
-					// 	to: '/vault/create',
-					// },
-					// {
-					// 	name: 'Edit',
-					// 	to: '/vault/edit',
-					// },
-				],
-			},
-			{
-				name: 'Savings',
-				icon: <FontAwesomeIcon icon={faPiggyBank} className="cursor-pointer" />,
-				childs: [
-					{
-						name: 'List',
-						to: '/savings/list',
-					},
-					{
-						name: 'Details',
-						to: '/savings/details',
-					},
-					{
-						name: 'Create',
-						to: '/savings/create',
-					},
-					{
-						name: 'Edit',
-						to: '/savings/edit',
-					},
-				],
-			},
-			{
-				name: 'Invoice',
-				icon: <FontAwesomeIcon icon={faFileInvoice} className="cursor-pointer" />,
-				childs: [
-					{
-						name: 'List',
-						to: '/invoice/list',
-					},
-					{
-						name: 'Details',
-						to: '/invoice/details',
-					},
-					{
-						name: 'Create',
-						to: '/invoice/create',
-					},
-					{
-						name: 'Edit',
-						to: '/invoice/edit',
+						to: '/payment/edit',
 					},
 				],
 			},

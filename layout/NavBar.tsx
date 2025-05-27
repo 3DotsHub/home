@@ -14,7 +14,7 @@ export default function NavBar({ isNavBarOpen, setIsNavBarOpen }: Props) {
 			<header className="flex items-top py-2 md:py-4 px-4 md:gap-x-4 relative h-full w-[18rem] overflow-y-auto">
 				<ul className={`flex-col hidden flex-1 md:flex lg:gap-[2rem] scroll-auto mt-2`}>
 					<Link className="grid justify-items-center" href={'/'}>
-						<Image className="rounded-xl" src="/assets/wrytlabs.png" alt="Logo" width={120} height={100} />
+						<Image className="rounded-xl" src="/assets/wrytlabsBlack.png" alt="Logo" width={120} height={100} />
 					</Link>
 
 					<button className="absolute top-4 right-4" onClick={() => setIsNavBarOpen(false)}>
