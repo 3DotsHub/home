@@ -66,12 +66,39 @@ export const NavTree: NavBarTree[] = [
 			{
 				name: 'Investor',
 				to: '/investor',
-				icon: <FontAwesomeIcon icon={faBook} className="cursor-pointer" />,
+				icon: <FontAwesomeIcon icon={faSeedling} className="cursor-pointer" />,
 			},
 			{
-				name: 'R&D',
-				to: '/product',
-				icon: <FontAwesomeIcon icon={faVault} className="cursor-pointer" />,
+				name: 'Research',
+				to: '/research',
+				icon: <FontAwesomeIcon icon={faLightbulb} className="cursor-pointer" />,
+			},
+		],
+	},
+	{
+		title: 'Collaboration',
+		items: [
+			{
+				name: 'Invoice',
+				icon: <FontAwesomeIcon icon={faFileInvoice} className="cursor-pointer" />,
+				childs: [
+					{
+						name: 'List',
+						to: '/invoice/list',
+					},
+					{
+						name: 'Details',
+						to: '/invoice/details',
+					},
+					{
+						name: 'Create',
+						to: '/invoice/create',
+					},
+					{
+						name: 'Settlement',
+						to: '/invoice/settlement',
+					},
+				],
 			},
 		],
 	},
@@ -79,30 +106,30 @@ export const NavTree: NavBarTree[] = [
 		title: 'Management',
 		items: [
 			{
-				name: 'Member',
+				name: 'Partner',
 				icon: <FontAwesomeIcon icon={faPeopleGroup} className="cursor-pointer" />,
 				childs: [
 					{
 						name: 'List',
-						to: '/member/list',
+						to: '/partner/list',
 					},
 					{
 						name: 'Details',
-						to: '/member/details',
+						to: '/partner/details',
 					},
 					{
 						name: 'Create',
-						to: '/member/create',
+						to: '/partner/create',
 					},
 					{
 						name: 'Edit',
-						to: '/member/edit',
+						to: '/partner/edit',
 					},
 				],
 			},
 			{
 				name: 'Payment',
-				icon: <FontAwesomeIcon icon={faServer} className="cursor-pointer" />,
+				icon: <FontAwesomeIcon icon={faMoneyBills} className="cursor-pointer" />,
 				childs: [
 					{
 						name: 'List',

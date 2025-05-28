@@ -57,7 +57,10 @@ export default function PageHome() {
 							<div className="font-semibold">Join us in shaping the future of open and decentralized technologies!</div>
 						</div>
 					</AppTitle>
-					<Image className="rounded-xl shadow-xl" src="/assets/building.jpg" alt="trading logo" width={600} height={250} />
+
+					<div className="p-4">
+						<Image className="rounded-xl" src="/assets/building.jpg" alt="trading logo" width={600} height={250} />
+					</div>
 				</div>
 
 				<div className="grid md:grid-cols-3 mt-10">
